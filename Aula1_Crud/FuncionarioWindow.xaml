@@ -1,0 +1,31 @@
+﻿<Window x:Class="Aula1_Crud.FuncionarioWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aula1_Crud"
+        mc:Ignorable="d"
+        Title="Funcionario" Height="450" Width="800">
+    <Grid Margin="3">
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Id"/>
+            <TextBox Text="{Binding Id}" IsEnabled="False"/>
+            <TextBlock Text="Nome"/>
+            <TextBox Text="{Binding Nome}"/>
+            <TextBlock Text="Sobrenome"/>
+            <TextBox Text="{Binding Sobrenome}"/>
+            <TextBlock Text="Data de Nascimento"/>
+            <DatePicker SelectedDate="{Binding DataNascimento}"/>
+            <TextBlock Text="Data de Admissão"/>
+            <DatePicker SelectedDate="{Binding DataAdmissao}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Button Name="OKButton" Grid.Column="0" Content="OK" Margin="3" IsDefault="True" Click="OKButton_Click" Background="#FF12E815"/>
+                <Button Grid.Column="1" Content="Cancelar" Margin="3" IsCancel="True" Background="#FFF53636"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
