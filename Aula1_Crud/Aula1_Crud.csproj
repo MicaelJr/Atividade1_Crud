@@ -55,13 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BaseCommand.cs" />
-    <Compile Include="BaseNotifyPropertyChanged.cs" />
+    <Compile Include="ViewModel\BaseCommand.cs" />
+    <Compile Include="ViewModel\BaseNotifyPropertyChanged.cs" />
     <Compile Include="FuncionarioWindow.xaml.cs">
       <DependentUpon>FuncionarioWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Funcionario.cs" />
+    <Compile Include="RelayCommand%28implementar%29.cs" />
+    <Compile Include="ViewModel\DeletarCommandViewModel.cs" />
+    <Compile Include="ViewModel\EditarCommandViewModel.cs" />
     <Compile Include="ViewModel\FuncionariosViewModel.cs" />
+    <Compile Include="MainWindowsVM.cs" />
+    <Compile Include="ViewModel\NovoCommandViewModel.cs" />
     <Page Include="FuncionarioWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,7 +85,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindowsVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

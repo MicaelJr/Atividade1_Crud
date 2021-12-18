@@ -11,8 +11,8 @@ namespace Aula1_Crud
 {
     public class MainWindowsVM : INotifyPropertyChanged
     {
-        
+
         public event PropertyChangedEventHandler PropertyChanged;
-                
-    }   
+
+    }
 }
