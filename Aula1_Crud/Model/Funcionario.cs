@@ -34,6 +34,8 @@ namespace Model
         }
                         
         private DateTime _dataAdmissao;
+        internal RelayCommand comando;
+
         public DateTime DataAdmissao
         {
             get { return _dataAdmissao; }
